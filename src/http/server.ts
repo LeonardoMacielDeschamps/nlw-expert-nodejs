@@ -19,7 +19,7 @@ app.post('/polls', async (request, reply) => {
     },
   })
 
-  reply.status(201).send({
+  return reply.status(201).send({
     pollId: poll.id,
   })
 })
